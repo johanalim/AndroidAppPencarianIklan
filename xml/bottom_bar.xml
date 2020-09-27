@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Tab>
+    <tab
+        id="@+id/tabHome"
+        icon="@drawable/ic_home"
+        activeColor="@color/colorPrimary"
+        titleSize="6dp"
+        title="Beranda"/>
+
+    <tab
+        id="@+id/tabAbout"
+        icon="@drawable/ic_developer"
+        activeColor="@color/colorPrimary"
+        titleSize="6dp"
+        title="Tentang"/>
+
+    <tab
+        id="@+id/tabAdmin"
+        icon="@drawable/ic_admin"
+        activeColor="@color/colorPrimary"
+        titleSize="6dp"
+        title="Admin"/>
+</Tab>

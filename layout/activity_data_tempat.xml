@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    tools:context="com.project.iklanjohan.DataTempat">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total Lokasi"
+        android:textColor="@android:color/black"
+        android:textSize="13sp"/>
+
+    <TextView
+        android:id="@+id/tvTotalLokasi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@android:color/black"
+        android:textSize="13sp"
+        android:gravity="right"
+        android:layout_marginBottom="2dp"/>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/tvTotalLokasi"/>
+
+    <SearchView
+        android:id="@+id/kolomCari"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:iconifiedByDefault="false"
+        android:padding="2dp"
+        android:queryHint="Cari disini ..."/>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kolomCari">
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <ListView
+        android:id="@+id/lvDataTempat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:divider="@color/colorPrimary"
+        android:dividerHeight="1dp" />
+
+</RelativeLayout>

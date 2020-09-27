@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp"
+    tools:context="com.project.iklanjohan.Fragment.AboutFragment">
+
+    <ImageView
+        android:layout_width="145dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="200dp"
+        android:src="@drawable/logojadi" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:text="Iklan Billboad Online"
+        android:textColor="@android:color/black"
+        android:textSize="17sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:text="Contact Person : 081289643624"
+        android:textColor="@android:color/black"
+        android:textSize="17sp" />
+
+</LinearLayout>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="2"
+    tools:context="com.project.iklanjohan.DetailTempat">
+
+    <ImageView
+        android:id="@+id/baliho"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:layout_weight="1"
+        android:src="@drawable/kosong"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/fmImage"
+        android:layout_weight="1"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvNamaTok"
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:background="#FF99CC00"
+                android:gravity="center"
+                android:text="-----------"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvAlamat"
+                android:layout_width="match_parent"
+                android:layout_height="78dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/tvNamaTok"
+                android:layout_marginTop="145dp"
+                android:background="#FF99CC00"
+                android:gravity="center"
+                android:text="-----------"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+
+            <TextView
+                android:id="@+id/tvId"
+                android:layout_width="match_parent"
+                android:layout_height="153dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/tvNamaTok"
+                android:layout_marginTop="-4dp"
+                android:background="#FF99CC00"
+                android:gravity="center"
+                android:text="-----------"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:textStyle="italic" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvAlamat"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                app:cardElevation="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvSpd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                app:cardElevation="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!--<android.support.v7.widget.CardView
+                android:id="@+id/cvNomorMeter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cvDaya"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                app:cardElevation="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/judulMeterNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Nomor Meter"
+                        android:textSize="20sp"
+                        android:textColor="@android:color/white"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:background="@color/colorPrimaryDark"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/judulMeterNo"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_margin="10dp">
+
+                        <ImageView
+                            android:id="@+id/imgMeterNo"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/ic_panel"/>
+
+                        <TextView
+                            android:id="@+id/tvMeterNo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:textColor="@android:color/black"
+                            android:text="-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;"
+                            android:textStyle="italic"
+                            android:layout_marginLeft="10dp"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>-->
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="TextView" />
+
+</LinearLayout>
